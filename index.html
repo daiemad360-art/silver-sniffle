@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مين بيحب التانى اكتر؟</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='0' y='14' font-size='16'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>مين بيحب التانى اكتر؟</h1>
+      <p class="subtitle">اختار واحد من الأجوبة لتعرف المفاجأة</p>
+      <div class="buttons">
+        <button id="dodoBtn" class="choice">دودو</button>
+        <button id="fofoBtn" class="choice">فوفو</button>
+        <div id="noMessage" class="no-message hidden">
+          <div class="balloon">لا</div>
+          <span class="love-text">بحبك يا فوفو</span>
+        </div>
+      </div>
+      <div id="celebration" class="celebration hidden">
+        <div class="celebration-card">
+          <div class="emoji">🎉🎊</div>
+          <h2>شطور!</h2>
+          <p class="love-line">شوفت طلعت بحبك اكتر</p>
+          <p>اختيارك صح، الحب في قلبك.</p>
+          <div class="hug-image" aria-hidden="true">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+              <!-- Person 1 -->
+              <circle cx="60" cy="40" r="15" fill="#ffcc99" />
+              <rect x="50" y="55" width="20" height="30" fill="#ffcc99" />
+              <rect x="45" y="55" width="30" height="10" fill="#ffcc99" />
+              <!-- Person 2 -->
+              <circle cx="140" cy="40" r="15" fill="#ffcc99" />
+              <rect x="130" y="55" width="20" height="30" fill="#ffcc99" />
+              <rect x="125" y="55" width="30" height="10" fill="#ffcc99" />
+              <!-- Arms hugging -->
+              <path d="M70 70 Q85 80 100 75" stroke="#663300" stroke-width="4" fill="none" />
+              <path d="M130 70 Q115 80 100 75" stroke="#663300" stroke-width="4" fill="none" />
+              <!-- Hearts -->
+              <path d="M95 60 C95 55 100 50 105 55 C110 50 115 55 115 60 C115 65 105 75 105 75 C105 75 95 65 95 60 Z" fill="#ff6fb5" />
+              <path d="M85 65 C85 62 88 59 91 62 C94 59 97 62 97 65 C97 68 91 74 91 74 C91 74 85 68 85 65 Z" fill="#ff6fb5" />
+            </svg>
+          </div>
+          <button id="closeCelebration" class="close-btn">اغلاق</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
